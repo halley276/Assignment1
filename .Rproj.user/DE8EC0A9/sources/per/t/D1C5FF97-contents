@@ -1,0 +1,19 @@
+pollutantmean <- function(directory, pollutant, id=1:332){
+        #standardise to 3 digit (add leading zeros)
+        id1<-c(formatC(id, width = 3, format = "d", flag = "0"))
+        #make zero vector
+        m1<- c(rep(0,length(id1)))
+        
+        for (i in seq_len(length(id1))){
+                #get vector containing specific pollutant info from directory
+                pol<- read.csv(paste(getwd(),"/",directory,"/",id1[i],".csv",sep=""))[,pollutant]
+                #remove NAs
+                realpol <- pol[!is.na(pol)]
+                #calc mean for one monitor, and assign to corresponding indice of m1
+                m1[i] <- mean(realpol)
+        }
+        
+        #print mean across all monitors in question
+       mean(m1)
+        #end code
+}

@@ -1,0 +1,52 @@
+df$Ozone>31
+df$Ozone
+df <- read.csv("hw1_data.csv")
+setwd("/Users/josephine-koay/Desktop/R_prog_JHU")
+df <- read.csv("hw1_data.csv")
+df$Ozone>31
+df[df$Ozone>31]
+df[df$Ozone>31,]
+df
+sum(df$Ozone>31)
+is.na(df$Ozone[df$Ozone])
+sum(!is.na(df$Ozone[df$Ozone]))
+x <- df[df$Ozone>31,]
+x
+y <- df[df$Temp>90,]
+y
+x&y
+completecases(df)
+library(dplyr)
+intersect(x,y)
+z<- intersect(x,y)
+z$S
+z$O
+#rows where Ozone values > 31#
+ x <- df[df$Ozone>31,]#
+ #rows where Temp values >90#
+ y <- df[df$Temp>90,]#
+ #find intersection of 2 dataframes#
+z<- intersect(x,y)#
+sum(z$S)
+mean(z$S)
+JuneT <- df[df$T==6]
+JuneT
+JuneT <- df[df$M==6]
+JuneT <- df[df$Month==6]
+df$M
+df$M ==6
+df[df$Month==6,]
+JuneT <- df[df$M==6,]$T
+JuneT
+mean(JuneT)
+max(JuneT)
+MayO <- df[df$M==5,]$O#
+max(MayO)
+MayO <- df[df$M==5,]$O
+MayO
+MayOzone <- MayO[!is.na(May0)]
+?is.na
+is.na(May0)
+MayOzone <- MayO[!is.na(MayO)]
+MayOzone
+max(MayOzone)

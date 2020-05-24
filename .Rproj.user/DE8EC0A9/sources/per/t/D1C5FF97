@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589894971460.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2586687774",
+    "id" : "D1C5FF97",
+    "lastKnownWriteTime" : 1589945391,
+    "last_content_update" : 1589945391739,
+    "path" : "~/Desktop/R_prog_JHU/pollutantmean.R",
+    "project_path" : "pollutantmean.R",
+    "properties" : {
+        "cursorPosition" : "6,40",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
